@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #131313;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  position: absolute;
+  z-index: 999;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  color: #fff;
+  justify-content: space-evenly;
+  font-weight: 700;
+}
+
+nav ul li {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  color: #fff;
+  font-size: 18px;
+}
+
+nav ul li:hover {
+  background-color: #131313;
+}
+
+nav ul a {
+  text-decoration: none;
+}
+
+footer {
+  padding: 48px;
+  background-color: #131313;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 62px;
+  gap: 32px;
+}
+
+footer hr {
+  height: 2px;
+  border-radius: 2px;
+  background-color: rgba(6, 78, 161, 1);
+  border: 0;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+footer address h2 {
+  color: #fff;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 32px;
+}
+
+footer address p {
+  color: #fff;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+}
+
+footer div svg {
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer div a {
+  cursor: pointer;
+}
+
+footer img {
+  width: 200px;
+  height: 200px;
+  filter: opacity(0.5);
+}
+
+footer div {
+  display: flex;
+  gap: 24px;
+  align-items: end;
+}
+
+footer iframe {
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 1100px) {
+  footer iframe {
+    display: none;
+  }
+}
+
+@media (max-width: 1040px) {
+  footer address h2 {
+    font-size: 38px;
+  }
+
+  footer address p {
+    font-size: 24px;
+  }
+
+  footer {
+    padding: 24px;
+  }
+
+  nav ul li {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 4px;
+    padding-top: 8px;
+  }
+  nav ul li {
+    font-size: 24px;
+    padding: 4px;
+  }
+
+  footer {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 510px) {
+  nav ul li {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 460px) {
+  nav {
+    padding: 2px;
+    padding-top: 8px;
+  }
+  nav ul li {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  nav {
+    padding: 2px;
+    padding-top: 8px;
+  }
+  nav ul li {
+    font-size: 18px;
+  }
+}

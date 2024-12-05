@@ -1,0 +1,205 @@
+.ofertasMain header {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.goWhastsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  font-size: 24px;
+}
+
+.ofertasMain header h2 {
+  font-weight: 100;
+  font-size: 86px;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+.ofertasMain header img {
+  position: absolute;
+  z-index: -999;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: opacity(0.6) blur(8px);
+}
+
+.ofertasMain .firstSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 42px;
+  gap: 24px;
+}
+
+.ofertasMain .firstSection h2 {
+  color: #fff;
+  font-size: 86px;
+  font-weight: 300;
+  width: 40%;
+  overflow: hidden;
+}
+
+.ofertasMain .firstSection h2 span {
+  font-weight: 700;
+}
+
+.ofertasMain .firstSection p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+  width: 24%;
+  font-style: italic;
+}
+
+.ofertasMain .secondSection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 86px;
+  position: relative;
+}
+
+.ofertasMain .secondSection div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/dizimo2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(4px) brightness(0.6);
+  z-index: -999;
+}
+
+.ofertasMain .secondSection p,
+.ofertasMain .secondSection h2 {
+  color: #fff;
+}
+
+.ofertasMain .secondSection h2 {
+  font-size: 36px;
+}
+
+.ofertasMain .secondSection p {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.ofertasMain .secondSection h2 span {
+  font-weight: 300;
+}
+
+.ofertasMain .thirdSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  padding: 86px;
+}
+
+.ofertasMain .thirdSection h2 {
+  color: #fff;
+  font-size: 68px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.ofertasMain .thirdSection h2 span {
+  font-weight: 700;
+}
+
+.ofertasMain .thirdSection img {
+  border-radius: 2px;
+  width: 20vw;
+  max-width: 180px;
+}
+
+.ofertasMain .thirdSection div {
+  display: flex;
+  width: 100%;
+  margin-top: 86px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 16px;
+}
+
+.ofertasMain .thirdSection div div {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+  width: 50%;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.ofertasMain .thirdSection div div p {
+  color: #fff;
+  font-size: 34px;
+}
+
+@media (max-width: 1000px) {
+  .ofertasMain .firstSection,
+  .ofertasMain .secondSection,
+  .ofertasMain .thirdSection {
+    padding: 86px 24px 86px 24px;
+  }
+  .ofertasMain .firstSection h2 {
+    font-size: 78px;
+  }
+  .ofertasMain .firstSection p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 880px) {
+  .ofertasMain header {
+    height: 60vh;
+    padding: 24px;
+  }
+
+  .ofertasMain .firstSection {
+    flex-wrap: wrap;
+  }
+  .ofertasMain .firstSection h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .ofertasMain .firstSection h2 br {
+    display: none;
+  }
+  .ofertasMain .firstSection p {
+    width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  .ofertasMain header h2 {
+    font-size: 48px;
+  }
+
+  .ofertasMain .thirdSection h2 {
+    font-size: 48px;
+  }
+}
